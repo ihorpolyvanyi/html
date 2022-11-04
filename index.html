@@ -11,40 +11,41 @@
 <body>
     <h1>Hello HTML</h1>
 
-    <h2>CatPhotoApp</h2>
-<main>
+    <h2>CatPhoto</h2>
+
+<main> <!--- тег основної частини боді -->
 
   <p>Click here to view more <a href="https://unsplash.com/images/animals/kitten">cat photos</a>.</p>
 
   <a href="#"><img src="loan-7AIDE8PrvA0-unsplash.jpg" width="250" alt="A cute kitty"></a>
 
-<div>
-  <p>Things cats love:</p>
-    <ul>
-      <li>cat nip</li>
+<div> <!--- блок --> 
+  <p>Things cats love:</p> <!--- параграф/абзац -->
+    <ul> <!--- ненумерований список-->
+      <li>cat nip</li> <!--- його частини-->
       <li>laser pointers</li>
       <li>lasagna</li>
     </ul>
   <p>Top 3 things cats hate:</p>
-    <ol>
-      <li>flea treatment</li>
+    <ol> <!--- нумерований список-->
+      <li>flea treatment</li> <!--- пункти-->
       <li>thunder</li>
       <li>other cats</li>
     </ol>
 </div>
 
-<form action="#">
+<form action="#"> <!--- форма для відправки інформації від користувача на сервер-->
   
-  <label for="indoor">
+  <label for="indoor"> <!--- підпис для елементів інтерактивної форми-->
     <input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor
   </label>
   
   <label for="outdoor">
-    <input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor
+    <input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor - <!--інпут типу радіо кнопка-->
   </label><br>
   
   <label for="loving">
-    <input id="loving" type="checkbox" name="personality" value="loving" checked> Loving
+    <input id="loving" type="checkbox" name="personality" value="loving" checked> Loving <!--- інпут типу чекбокс-->
   </label>
  
   <label for="lazy">
@@ -55,9 +56,16 @@
     <input id="energetic" type="checkbox" name="personality" value="energetic"> Energetic
   </label><br>
 
-  <input type="text" placeholder="something" required>
+  <input type="text" placeholder="something" required> 
 
-  <button type="submit">Submit</button>
+  <button type="submit">Submit</button> <!--- баттн кнопка -->
+
+  <!--атрібути: 
+  for - ідентифікатор
+  placeholder - що написано до кліку користувача
+  checked - обране по дефолту
+  value - значення кнопки для серверу
+  required - обов'язково до заповнення-->
 
 </form>
 
